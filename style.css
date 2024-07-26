@@ -1,3 +1,38 @@
+@media only screen and (max-width:1024px){
+
+}
+
+/* Keyframes for animating the headers */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animation to headers */
+.self h1 {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+/* Keyframes for animating the image */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
 .demo{
     position: fixed;
     background-color:black;
@@ -17,16 +52,25 @@
     margin:10px;
     }
     .home{
-        padding-top: 200px;
-        padding-bottom: 15%;
+      display: flex;
     }
-    .about{
-        color:black;
-     margin-bottom: 10%;
-      
-      
+    .self{
+      margin-top: 200px;
+      margin-left: 130px;
+    }
+    .self h1{
+      font-size: 70px;
+    }
+  .ghj{
+    margin-left: 200px;
+    margin-top: 100px;
   }
   
+  .about{
+    color:black;
+   margin-top: 150px;
+   margin-left: 250px;
+}
   .Skill {
     height: 100vh;
     display: flex;
@@ -75,6 +119,27 @@
     animation: progress 0.4s ease-in-out forwards;
     opacity: 0;
 }
+.skill-per.html{
+  width: 80%;
+}
+.skill-per.css{
+  width: 75%;
+}
+.skill-per.bootstrap{
+  width: 70%;
+}
+.skill-per.javascript{
+  width: 85%;
+}
+.skill-per.wordpress{
+  width: 80%;
+}
+.skill-per.photoshop{
+  width: 75%;
+}
+.skill-per.figma{
+  width: 70%;
+}
 
 @keyframes progress {
     0% {
@@ -107,7 +172,7 @@
     height: 10px;
     width: 10px;
     z-index: -1;
-    background-color: greenyellow;
+   
     transform: translateX(-50%) rotate(45deg);
 }
 
