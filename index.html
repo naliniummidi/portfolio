@@ -35,56 +35,30 @@
           </div>
         </div>
         
-        <div id="About" style="padding: 5%;">
-          <div class="about" >
+        <div id="About" style="padding-right: 11%;" >
+          <div class="about">
           <div class="row" >
+            <div class="col-md-6">
+                 <img src="images/390172 (1)_page-0001.jpg" style="height: 400px;" width="550px" />
+            </div>
             <div class="col-sm-6">
             <h1 style="text-align: center;">About</h1>
               <p style="font-size: 20px;">To stand out as a UX designer, consistency is key in building your personal brand. Stick to a unique style and voice across all your work and interactions. Create a portfolio that reflects your best projects and design approach. Engage with the design community on social media or through blogs to share your insights.</p>
               <div class="tab-titles">
                  
-                  <p class="tab-links " onclick="edg()">Education</p>
-                  <p class="tab-links "onclick="cert()">Certificates</p>
+                 
+                 
               </div>
               <div class="tab-contents" id="Education" >
-                  <ul style="padding-right: -7%;">
+                <h2>Education</h2>
+                  <ul>
                     <p style="padding-right: 5%;"><span>2018-2019</span><br>10<sup>th</sup>Saraswathi vidyalam,K.Dibbadipalem</p>
                     <p style="padding-right: 5%;"><span>2019-2021</span><br> (Intermediate) at NRI Jr.College,Visakhapatnam</p> 
                     <p style="padding-right: 5%;"><span>2021-2024</span><br> Bsc Computer science at Bvk degree college,Viskhapatnam</p>
   
                      </ul>
               </div>
-              <div class="tab-contents" id="Certificates" style="display: none;">
-                  <ul>
-                     
-                      <img src="images/img2.jpg.jpeg" style="margin-left: 400px;">
-                  </ul>
-                  </div>
-                  <script>
-                    function cert(){
-                      document.getElementById("Certificates").style.display="block"
-                      document.getElementById("Certificates").style.backgroundColor="red"
-                      document.getElementById("Education").style.display="none"
-                    }
-                    function edg(){
-                      document.getElementById("Certificates").style.display="none"
-                      document.getElementById("Education").style.display="block"
-                    }
-  
-  
-                    var tablinks=document.getElementsByClassName("tab-links");
-                    var tabcontents=document.getElementsByClassName("tab-contents");
-                    function opentab(tabname){
-                      for(tablink of tablinks){
-                        tablink.classList.remove("active-link");
-                      }
-                      for(tabcontent of tabcontents){
-                        tabcontent.classList.remove("active-tab");
-                      }
-                      event.currentTarget.classList.add("active-link");
-                      document.getElementById(tabname).classList.add("active-tab");
-                    }
-                  </script>
+             
             </div>
           </div>
         </div>
